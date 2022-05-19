@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+body {
+  font-size: 16px;
+  color: #222222;
+  /* font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Nunito', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  transition: opacity 0.3s;
+  /* display: block; */
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.sp{
+  display: none;
+}
+
+/* header */
+.header--container {
+  width: 1140px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header--tit {
+  width: 200px;
+}
+
+.header--nav--list {
+  display: flex;
+}
+
+.header--nav--list--item {
+  margin-right: 50px;
+}
+
+.header--nav--list--item:last-of-type {
+  margin-right: 0;
+}
+
+/* fv */
+.top--fv {
+  height: calc(100vh - 80px);
+  /* 画面いっぱいに広がらせる */
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/fv-pic.jpg);
+}
+
+/* community */
+.top--community {
+  padding-top: 100px;
+}
+
+.top--community--tit {
+  width: 517px;
+  margin: 0 auto;
+}
+
+.top--community--txt {
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  line-height: 34px;
+}
+
+/* join us */
+.top--join {
+  padding-top: 100px;
+}
+
+.top--join--container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.top--join--tit {
+  color: #0075C1;
+  font-size: 40px;
+  text-align: center;
+}
+
+.top--join--txt {
+  display: block;
+  font-weight: normal;
+  text-align: center;
+  font-size: 12px;
+  color: #909090;
+  margin-top: 12px;
+}
+
+.top--join--list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.top--join--list--item {
+  width: 350px;
+  height: 233px;
+  background-image: url(../img/join--pic1.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.top--join--list--item:nth-of-type(2) {
+  background-image: url(../img/join--pic2.jpg);
+}
+
+.top--join--list--item:nth-of-type(3) {
+  background-image: url(../img/join--pic3.jpg);
+}
+
+.top--join--list--item a {
+  height: 233px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top--join--button {
+  width: 200px;
+  margin: 40px auto 0;
+}
+
+.top--join--button a {
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background: #0075C1;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+/* contact */
+.top--contact {
+  padding: 100px 0;
+}
+
+.top--contact--container {
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.top--contact--box {
+  padding-top: 8px;
+  width: 520px;
+}
+
+.top--contact--box--tit {
+  color: #0075C1;
+  font-size: 40px;
+}
+
+.top--contact--box--tit span {
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  color: #909090;
+  margin-top: 7px;
+}
+
+.top--contact--box--txt {
+  line-height: 34px;
+  margin-top: 30px;
+}
+
+.top--contact--box--button {
+  width: 280px;
+  margin-top: 30px;
+}
+
+.top--contact--box--button a {
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background: #0075C1;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.top--contact--pic {
+  width: 540px;
+  border-radius: 20px;
+}
+
+.top--contact--pic img {
+  border-radius: 20px;
+}
+
+/* footer */
+.footer {
+  background-color: #EEEEEE;
+  padding: 50px 0 17px;
+}
+
+.footer--tit {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.footer--list {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer--list--item {
+  margin-right: 50px;
+}
+
+.footer--list--item:last-of-type {
+  margin-right: 0;
+}
+
+.footer--txt {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+/* レスポンシブ */
+@media (max-width: 500px) {
+
+  .sp{
+    display: block;
+  }
+
+
+  /* header */
+  .header--container {
+    width: 330px;
+    height: 106px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header--tit {
+    width: 130px;
+  }
+
+  .header--nav--list {
+    margin-top: 18px;
+    display: flex;
+  }
+
+  /* fv */
+  .top--fv {
+    height: 295px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/fv--pic_sp.jpg);
+  }
+
+  /* community */
+
+  .top--community--tit {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  .top--community--txt {
+    font-size: 14px;
+    margin: 0 auto;
+    width: 350px;
+    margin-top: 38px auto 0;
+  }
+
+  /* join us */
+  .top--join--container {
+    width: 280px;
+  }
+
+  .top--join--list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 44px;
+  }
+
+  .top--join--list--item {
+    width: 100%;
+    height: 186px;
+  }
+
+  .top--join--list--item:nth-of-type(2) {
+    margin-top: 30px;
+  }
+
+  .top--join--list--item:nth-of-type(3) {
+    margin-top: 30px;
+  }
+
+  .top--join--list--item a {
+    height: 186px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top--join--button {
+    margin: 34px auto 0;
+  }
+
+  /* contact */
+  .top--contact {
+    padding: 80px 0;
+  }
+
+  .top--contact--container {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    flex-wrap: wrap;
+  }
+
+  .top--contact--box {
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  .top--contact--box--tit {
+    text-align: center;
+  }
+
+  .top--contact--box--tit span {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    color: #909090;
+    margin-top: 7px;
+  }
+
+  .top--contact--box--txt {
+    line-height: 34px;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  .top--contact--box--button {
+    margin: 30px auto 0;
+  }
+
+  .top--contact--pic {
+    width: 300px;
+    margin-top: 50px;
+  }
+
+  /* footer */
+  .footer {
+    padding: 50px 0 14px;
+  }
+
+  .footer--tit {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .footer--list {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .footer--list--item {
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .footer--list--item:nth-of-type(n+2){
+    margin-top: 18px;
+  }
+
+  .footer--txt {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+}
