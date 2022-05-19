@@ -22,7 +22,7 @@ a:hover {
   opacity: 0.8;
 }
 
-.sp{
+.sp {
   display: none;
 }
 
@@ -114,6 +114,7 @@ a:hover {
   height: 233px;
   background-image: url(../img/join--pic1.jpg);
   background-size: cover;
+  background-position: center;
   border-radius: 20px;
   color: #FFFFFF;
   font-size: 18px;
@@ -241,10 +242,54 @@ a:hover {
   margin-top: 30px;
 }
 
-/* レスポンシブ */
+/* レスポンシブ タブレット */
+@media (min-width:501px) and (max-width:1140px) {
+
+  /* header */
+  .header--container {
+    max-width: 1140px;
+    width: auto;
+    padding: 0 40px;
+  }
+
+  /* join us */
+
+  .top--join--container {
+    max-width: 1140px;
+    width: auto;
+    padding: 0 40px;
+  }
+
+  .top--join--list--item {
+    width: 200px;
+    height: 153px;
+  }
+
+  .top--join--list--item a {
+    height: 153px;
+  }
+
+  /* contact */
+  .top--contact--container {
+    max-width: 1140px;
+    width: auto;
+    padding: 0 40px;
+  }
+
+  .top--contact--box {
+    width: 47.5%;
+  }
+
+  .top--contact--pic {
+    width: 47.5%;
+  }
+
+}
+
+/* レスポンシブ スマホ */
 @media (max-width: 500px) {
 
-  .sp{
+  .sp {
     display: block;
   }
 
@@ -389,7 +434,7 @@ a:hover {
     text-align: center;
   }
 
-  .footer--list--item:nth-of-type(n+2){
+  .footer--list--item:nth-of-type(n+2) {
     margin-top: 18px;
   }
 

@@ -176,6 +176,21 @@
     </footer>
     <!-- /.footer -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            var viewport = document.createElement('meta');
+            viewport.setAttribute('name', 'viewport');
+            if (screen.width < 500) {
+                viewport.setAttribute('content', 'width=375');
+            } else {
+                viewport.setAttribute('content', 'width=1180');
+            }
+            document.getElementsByTagName('head')[0].appendChild(viewport);
+        });
+    </script>
+
 </body>
 
 </html>
